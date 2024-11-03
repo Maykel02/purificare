@@ -1,0 +1,53 @@
+---
+
+---
+<nav class="">
+    <div class="mx-auto flex lg:flex-row flex-row-reverse w-4/5 justify-between items-center">
+        <img id="icon-close" class="lg:hidden hidden cursor-pointer" src="/img/plus.svg" alt="">
+        <img id="icon-open" class="lg:hidden cursor-pointer" src="/img/bars.svg" alt="">
+        <ul id="menu" class="lg:flex lg:static fixed text-center lg:w-auto w-full lg:top-0 top-20 lg:bg-transparent bg-white/75 left-0 hidden lg:flex-row flex-col gap-8 font-semibold">
+            <li class="lg:my-0 my-9">
+                <a class="hover:text-[--color-second]" href="">Productos</a>
+            </li>
+            <li class="lg:my-0 my-9">
+                <a class="hover:text-[--color-second]" href="">¿Cómo Funciona?</a>
+            </li>
+            <li class="lg:my-0 my-9">
+                <a class="hover:text-[--color-second]" href="">Contáctenos</a>
+            </li>
+        </ul>
+        <div class="flex items-center gap-3">
+            <div class="flex items-end">
+                <img src="/img/call.png" alt="" width="40" height="40">
+            </div>
+            <div>
+                <span class="text-sm font-semibold italic text-[--color-primary]">Contáctenos</span>
+                <div class="-mt-2">
+                    <h6 class="text-xl font-bold"><a href="">965 745 152</a> </h6>
+                    <!-- <h6 class="text-xl font-bold -mt-2"><a href="">098 098 098</a> </h6> -->
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<script>
+    const iconOpen = document.querySelector('#icon-open');
+    const iconClose = document.querySelector('#icon-close');
+    const menu = document.querySelector('#menu');
+
+    iconOpen.addEventListener("click",function(){
+        menu.classList.toggle('hidden');
+        iconOpen.classList.toggle('hidden');
+        iconClose.classList.toggle('hidden');
+    });
+
+    iconClose.addEventListener("click",function(){
+        menu.classList.toggle('hidden');
+        iconOpen.classList.toggle('hidden');
+        iconClose.classList.toggle('hidden');
+    })
+
+</script>

@@ -1,0 +1,35 @@
+---
+import Title from "../UX/Title.astro"
+import FaqItems from "../UX/FaqItems.astro"
+---
+<section class="xl:py-40 py-20">
+    <div class="container mx-auto">
+        <Title
+            title="FAQs";
+            subtitle="Preguntas Frecuentes";
+        />
+        <div class="mt-10 flex justify-center px-3">
+            <div class="gap-10 w-full md:w-[80%] lg:w-[40%]">
+                <FaqItems
+                    button="button1";
+                    container="container1";
+                    title="¿Qué incluyen los productos de Purificare?";
+                    body="Todos los productos incluyen garantía, certificado de fabricante, soporte técnico y atención 24/7.";
+                />
+                <FaqItems
+                    button="button2";
+                    container="container2";
+                    title="¿Dónde está disponible el servicio de instalación gratuita?";
+                    body="La instalación gratuita es válida solo en Lima. Fuera de Lima, ofrecemos soporte técnico remoto.";
+                />
+                <FaqItems
+                    button="button3";
+                    container="container3";
+                    title="¿Cómo accedo al descuento del 10%?";
+                    body="El descuento se aplica automáticamente al realizar tu compra en nuestra web o contactando a nuestro equipo de ventas.";
+                />
+            </div>
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,33 @@
+---
+    import Title from '../UX/Title.astro'
+    import Card from '../UX/Card.astro'
+---
+
+<section class="pt-20 pb-20 container mx-auto lg:px-40">
+    <Title
+        title="Beneficios de Elegir Purificare";
+        subtitle="¿Por qué elegir Purificare?";
+    />
+    <div class="grid lg:grid-cols-4 grid-cols-2 lg:gap-6 gap-3 mt-20">
+        <Card
+            href="/img/icono-1.png";
+            title="Calidad garantizada";
+            body="Nuestros productos cuentan con homologación y certificado de fabricante.";
+        />
+        <Card
+            href="/img/icono-2.png";
+            title="Ahorro asegurado";
+            body="10% de descuento en todos nuestros purificadores y dispensadores.";
+        />
+        <Card
+            href="/img/icono-3.png";
+            title="Delivery gratuito";
+            body="Delivery gratuito a nivel nacional en compras mayores a S/. 500. Instalación gratuita en Lima";
+        />
+        <Card
+            href="/img/icono-4.png";
+            title="Soporte técnico";
+            body="Soporte técnico y atención posventa 24/7 para asegurarte un servicio continuo";
+        />
+    </div>
+</section>

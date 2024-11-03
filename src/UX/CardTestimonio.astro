@@ -1,0 +1,16 @@
+---
+const { name, body, href } = Astro.props;
+---
+
+<div class="shadow-lg rounded-lg lg:py-12 py-6 lg:px-10 px-5 bg-white">
+    <div class="flex items-center gap-5">
+        <img src={href} alt="">
+        <div>
+            <h5 class="text-lg font-semibold text-[--color-primary]">{name}</h5>
+            <span class="text-md">Cliente</span>
+        </div>
+    </div>
+    <div class="mt-5">
+        <p class="text-sm">{body}</p>
+    </div>
+</div>

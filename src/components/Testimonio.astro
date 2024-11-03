@@ -1,0 +1,29 @@
+---
+import Title from "../UX/Title.astro"
+import CardTestimonio from "../UX/CardTestimonio.astro"
+---
+<section class="lx:py-40 py-20 bg-[--color-gray]">
+    <div class="container mx-auto lg:px-20 px-3">
+        <Title
+            title="Testimonios";
+            subtitle="Clientes que confían en Purificare";
+        />
+        <div class="grid lg:grid-cols-3 grid-cols-1 gap-5 mt-10">
+            <CardTestimonio
+                name="Giovanna Alfaro";
+                href="/img/img2.png";
+                body="¡Excelente servicio! Nada mejor como la garantía de tener la mejor opción para tu salud y más aún al tratarse de agua que nuestro organismo necesita. Muy bueno Purificare, gracias.";
+            />
+            <CardTestimonio
+                name="Dante Escajadillo";
+                href="/img/img1.png";
+                body="Muy recomendable. Lo que más me agradó es verificar que los accesorios y componentes de los equipos soncertificados para la industria alimentaria para consumohumano, también el soporte técnico está muy bienimplementado y que garantiza que los productos tendrán mantenimiento regular";
+            />
+            <CardTestimonio
+                name="Carlos Lazo";
+                href="/img/img3.png";
+                body="Excelente purificador que adquirí. Para los amantes en el café sabemos que en el 99% es agua, y esta agua está 10 puntos, mejora tremendamente la calidad del café. Además tiene buena capacidad de producción";
+            />
+        </div>
+    </div>
+</section>

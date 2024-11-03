@@ -1,0 +1,63 @@
+---
+import Title from "../UX/Title.astro";
+import CardProduct from "../UX/CardProduct.astro";
+
+const elements1 = [
+    "Brinda agua pura y alcalina a 3 temperaturas.",
+    "Agua fría: 4°C - 10°C / Agua ambiente: 22°C - 28°C / Agua caliente: 40°C / 80°C.",
+    "Ideal para uso comercial. Oficinas y restaurantes.",
+    "Elimina virus, bacterias, cloro, óxidos, sarro, metales pesados y más de 200 contaminantes.",
+    "Previene la formación de cálculos renales, ya que elimina la dureza del agua."
+];
+const elements2 = [
+    "Nuestro nuevo purificador de agua te permite obtener agua 100% filtrada y purificada utilizando el sistema de ÓSMOSIS INVERSA con 5 etapas de filtración.",
+    "Elimina el 100% de bacterias, virus, cloro y metales pesados.",
+    "CERO SARRO.",
+    "Previene enfermedades.",
+    "Ideal para tu negocio y/o emprendimiento."
+];
+const elements3 = [
+    "Brinda agua pura y alcalina e hidrogenada las 24hrs.",
+    "Elimina virus, bacterias, cloro, óxidos, sarro, metales pesados y más de 200 contaminantes.",
+    "Previene la formación de cálculos renales, ya que elimina la dureza del agua.",
+    "Ideal para uso residencial. Zona urbana y playas.",
+    "Requiere punto de agua, punto eléctrico y punto de desfogue."
+];
+const elements4 = [
+    "Remueve el cloro por su proceso de reducción de agentes oxidantes.",
+    "Retiene sedimentos.",
+    "Quita el mal olor y no despide carbón.",
+    "Ideal para uso comercial. En purificadores de agua.",
+    "Excelente filtro previo al post filtro vegetal o alcalinizador para mejorar el sabor del agua."
+];
+---
+<section class="bg-[--color-gray] pt-24 pb-24">
+    <div class="container mx-auto">
+        <Title
+            title="Productos destacados";
+            subtitle="Nuestros Purificadores y Dispensadores";
+        />
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 pt-20 px-3">
+            <CardProduct
+                href="/img/item-1.png";
+                title="Dispensador Purificare CWH939 Ósmosis Inversa";
+                items={elements1};
+            />
+            <CardProduct
+                href="/img/item-2.png";
+                title=" Purificador Osmosis inversa Kompact800 Comercial";
+                items={elements2};
+            />
+            <CardProduct
+                href="/img/item-3.png";
+                title="Purificador Purificare Premium DMAX100 Ósmosis Inversa";
+                items={elements3};
+            />
+            <CardProduct
+                href="/img/item-4.png";
+                title="Dispensador Purificare CWH939 Ósmosis Inversa";
+                items={elements4};
+            />
+        </div>
+    </div>
+</section>

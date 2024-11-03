@@ -1,0 +1,35 @@
+---
+const {title, body, button, container} = Astro.props;
+---
+<div>
+    <div class="py-3 rounded-full lg:px-10 px-3 bg-[--color-primary] my-3 text-white flex items-center justify-between">
+       {title}
+        <button id={button}>
+            <img class="size-7 cursor-pointer" src="/img/arrow.svg" alt="">
+        </button>
+    </div>
+    <div id={container} class="p-5 hidden">
+        <p >{body}</p>
+    </div>
+</div>
+
+<script>
+
+    const button1 = document.querySelector("#button1");
+    const button2 = document.querySelector("#button2");
+    const button3 = document.querySelector("#button3");
+    const container1 = document.querySelector("#container1");
+    const container2 = document.querySelector("#container2");
+    const container3 = document.querySelector("#container3");
+
+    button1.addEventListener("click", function(){
+        container1.classList.toggle('hidden')
+    })
+    button2.addEventListener("click", function(){
+        container2.classList.toggle('hidden')
+    })
+    button3.addEventListener("click", function(){
+        container3.classList.toggle('hidden')
+    })
+
+</script>

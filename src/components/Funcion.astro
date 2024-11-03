@@ -1,0 +1,40 @@
+---
+import Button from "../UX/Button.astro"
+---
+<section>
+    <div class="flex lg:flex-row flex-col mx-auto">
+        <div class="lg:w-1/2 w-full bg-cover bg-no-repeat bg-center min-h-60" style="background-image: url('/img/post-1.jpg');">
+
+        </div>
+        <div class="lg:w-1/2 w-full py-20 lg:pl-20 xl:pr-96 p-3">
+            <h3 class="text-3xl font-semibold text-[--color-primary] mb-14">¿Cómo Funciona?</h3>
+            <div class="flex items-center gap-5 mb-9">
+                <img class="w-14 h-14" src="/img/ico-3.png" alt="">
+                <div>
+                    <h4 class="text-lg font-semibold text-[--color-primary]">Pide tu asesoría gratuita</h4>
+                    <p>Nuestro equipo te contactará para brindarte una atención personalizada y ayudarte a elegir el purificador o dispensador ideal para ti.</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-5 mb-9">
+                <img class="w-14 h-14" src="/img/ico-2.png" alt="">
+                <div>
+                    <h4 class="text-lg font-semibold text-[--color-primary]">Realiza tu compra con descuento</h4>
+                    <p>Aprovecha el 10% de descuento y confirma tu pedido. ¡Nosotros nos encargamos del resto!</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-5 mb-9">
+                <img class="w-14 h-14" src="/img/ico-1.png" alt="">
+                <div>
+                    <h4 class="text-lg font-semibold text-[--color-primary]">Recibe y disfruta de agua pura</h4>
+                    <p>Delivery gratuito a nivel nacional (compras mayores a S/. 500) e instalación sin
+                        costo en Lima.</p>
+                </div>
+            </div>
+            <div>
+                <Button
+                    label="Pide tu Asesoría Gratis";
+                />
+            </div>
+        </div>
+    </div>
+</section>
